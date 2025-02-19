@@ -10,10 +10,7 @@ const app = express();
 connectDB();
 
 
-app.use(cors({
-    origin: ["http://localhost:5173", "https://userd-frontend.vercel.app"], // Corrected syntax
-    credentials: true
-}));
+app.use(cors());
 
 app.use(express.json());
 
